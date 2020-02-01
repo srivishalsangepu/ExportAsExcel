@@ -11,7 +11,6 @@ export class ExcelService {
 
 
   constructor(private datePipe: DatePipe) {
-
   }
 
   generateExcel(dataValue) {
