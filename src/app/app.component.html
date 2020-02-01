@@ -1,0 +1,23 @@
+<div class="jumbotron">
+    <table class="table-responsive">
+        <tr>
+            <button (click)="generateExcel(data)"> Generate Excel</button>
+        </tr>
+        <tr>
+            <th>Year</th>
+            <th>Month</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Quantity</th>
+            <th>Pct</th>
+        </tr>
+        <tr *ngFor="let item of data">
+            <td>{{item.year}}</td>
+            <td>{{item.month}}</td>
+            <td>{{item.make}}</td>
+            <td>{{item.model}}</td>
+            <td>{{item.quantity}}</td>
+            <td>{{item.pct}}</td>
+        </tr>
+    </table>
+</div>
